@@ -11,3 +11,6 @@ insert into t_test values
 (4, 'test4', 'xcvb'),
 (5, 'test5', 'zxcv'),
 (6, 'test6', 'tyui');
+
+-- read data from csv
+CREATE TABLE article AS SELECT * FROM read_csv_auto('data/article.csv');
